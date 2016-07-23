@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	background: gray;
+	height: 100%;
+}
+.main{
+	width: 300px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  overflow: hidden !important;
+	background:transparent;
+
+}
+.over {
+  transform: scale(100);
+  transition: all 0.350s ease-in;
+  cursor: default;
+}
+.main .menu{
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	background: blue;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.main .line{
+	background: #fff;
+	height: 2px;
+	width: 30px;
+	display: block;
+	position: absolute;
+	right:10px;
+	cursor: pointer;
+}
+.main .line1{
+	top: 13px;
+}
+.main .line2{
+	top: 23px;
+}
+.main .line3{
+	top: 33px;
+}
+.main .list{
+	width: 100%;
+	height:90%;	
+	background: blue;
+	position: absolute;
+	bottom: 0;
+	position: 0;
+	visibility: hidden;
+}
+.overvoci {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.400s;
+  transition-delay: 0.370s;
+}
+.main .list ul{
+	list-style: none;
+}
+.overL1 {
+  animation: closetop 1s forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+.overL2 {
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.overL3 {
+  animation: closebottom 1s forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+@keyframes closetop {
+	0% {
+    transform: translateY(10px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(10px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+}
+@keyframes closebottom {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}

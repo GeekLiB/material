@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<meta charset="utf-8">
+
+</head>
+<body>
+<div class="main">
+	<div class="menu"></div>
+	<span class="line line1"></span>
+	<span class="line line2"></span>
+	<span class="line line3"></span>
+	<div class="list">
+		<ul>
+			<li>
+				<a href="">ha</a>
+			</li>
+			<li>
+				<a href="">ha</a>
+			</li>
+			<li>
+				<a href="">ha</a>
+			</li>
+			<li>
+				<a href="">ha</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu,.line').on('click',function(){
+			  $('.menu').toggleClass('over');
+			  $('.line1').toggleClass('overL1');
+			  $('.line2').toggleClass('overL2');
+			  $('.line3').toggleClass('overL3');
+			  $('.list').toggleClass('overvoci');
+		});
+	});
+</script>
+</body>
+</html>
